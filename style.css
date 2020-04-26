@@ -14,18 +14,44 @@ h1 {
 h2 {
   font-weight: 400;
 }
-li,
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
 .forecast {
   list-style: none;
-  display: block;
   text-align: center;
-  margin-bottom: 2rem;
-  font-family: Helvetica;
+  padding: 10px 0;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+  max-width: 400px;
+  margin: 0 auto;
 }
+li:hover {
+  background-color: pink;
+}
+
 button {
   display: block;
-  border-radius: 1rem;
-  margin: 0 auto;
+  margin: 20px auto;
+  border: 1px solid #1a64d6;
+  background: #1a64d6;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 16px 24px;
+  border-radius: 30px;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0;
+}
+button:hover {
+  background-color: white;
+  border-block-color: #6798e4;
 }
 small {
   display: block;
